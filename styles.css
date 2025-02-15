@@ -8,7 +8,9 @@ h2{
   font-weight: bold;
 }
 p{
-  line-height: 0.1;
+  line-height: 1.3; /* Kisebb sorköz */
+  margin: 2px 0; /* Csökkentett margó */
+  
 }
 .box{
   display: flex;
@@ -26,7 +28,10 @@ p{
   box-shadow: #ff3232 8px 8px 0 0;
   border-radius: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-count: 2; /* Két oszlopos elrendezés */
+  column-gap: 15px; /* Oszlopok közötti távolság */
 }
 .item-brown{
   text-align: left;
@@ -39,7 +44,10 @@ p{
   box-shadow: #43270f 8px 8px 0 0;
   border-radius: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-count: 2; /* Két oszlopos elrendezés */
+  column-gap: 15px; /* Oszlopok közötti távolság */
 }
 img{
   height: 400px;
@@ -51,3 +59,6 @@ img{
     flex-direction: column;
   }
 }
+
+
+
